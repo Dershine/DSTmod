@@ -1,4 +1,4 @@
-name = "bonus_bag"
+name = "month_card_bag"
 author = "前来不居下"
 description = [[
 随机获得奖励
