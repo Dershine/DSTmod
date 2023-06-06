@@ -9,7 +9,7 @@ local recipe_name = "month_card_bag"
 local ingredients = {Ingredient(CHARACTER_INGREDIENT.SANITY, 10)}
 local tech = TECH.NONE
 local config = {
-    atlas = "images/inventoryimages/month_card_bag.xml",
+    atlas = "images/inventoryimages/miao_packbox_full.xml",
 }
 AddRecipe2(recipe_name, ingredients, tech, config)
 

@@ -147,13 +147,9 @@ local function MakeBundle(name, onesize, variations, loot, tossloot, setupdata, 
 
         MakeInventoryPhysics(inst)
 
-        inst.AnimState:SetBank(bank or name)
-        inst.AnimState:SetBuild(build or name)
-        inst.AnimState:PlayAnimation(
-            variations ~= nil and
-            (onesize and "idle_onesize1" or "idle_large1") or
-            (onesize and "idle_onesize" or "idle_large")
-        )
+        inst.AnimState:SetBank("bundle")
+    inst.AnimState:SetBuild("bundle")
+    inst.AnimState:PlayAnimation("unwrap")
 
         inst:AddTag("bundle")
 
